@@ -1,0 +1,95 @@
+html {
+	font-family: sans-serif;
+}
+
+body{
+    height:915px;
+    display:grid;
+	background-color:#f0f4f8 ;
+    grid-template-rows: 150px 737px 30px;
+    grid-template-columns: auto 200px 600px auto;
+    grid-template-areas:
+        "PageTitle	PageTitle	PageTitle	PageTitle"
+        "LeftBlank	Content     Content		RightBlank"
+        "PageSignature  PageSignature	PageSignature	PageSignature";
+	margin:auto;
+}
+
+.PageTitle{    
+	color:#f0f4f8;
+    font-size:16px;
+    font-weight:bold;
+	height:150px;	
+	text-align:center;
+	background-color:#2e4a62;
+	grid-area:PageTitle;
+}
+
+
+#Content{
+	height:737px;
+	overflow:auto;
+	text-align:justify;
+	background-color:#f0f4f8;
+	grid-area:Content;
+}
+
+.LoginForm {
+	color: #294257;
+    width:260px; 
+	height:240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #f0f4f8 ;
+	border-radius: 10px;
+	border:2px solid #294257;
+}
+
+.InputForm {
+	color: #294257;
+    width:260px; 
+	height:300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #f0f4f8;
+	border-radius: 10px;
+	border:2px solid #2e4a62;
+}
+
+.TextField {
+    width:250px; 
+	height:25px;
+}
+
+.Button {
+	color: #f0f4f8;
+    width:258px; 
+	height:33px;
+    background-color:#456f93 ;
+    text-decoration:none;
+	font-weight:bold;
+	border:1px solid #f0f4f8;
+	border-radius: 7px;
+}
+
+.Button:hover {
+	background-color:#6993b8 ;
+}
+
+.Button A:active {
+	text-decoration:none;
+	color:black;
+}
+
+
+.PageSignature{
+	color:#f0f4f8; 
+	height:50px;
+	text-align:center;
+	background-color:#2e4a62;
+	grid-area:PageSignature;
+}

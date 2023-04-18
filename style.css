@@ -1,0 +1,102 @@
+html {
+	font-family: sans-serif;
+}
+
+body{
+	color:#294257;
+    height:915px;
+    display:grid;
+	background-color:#f0f4f8 ;
+    grid-template-rows: 150px 737px 30px;
+    grid-template-columns: auto 200px 600px auto;
+    grid-template-areas:
+        "PageTitle	PageTitle	PageTitle	PageTitle"
+        "LeftBlank	MenuBar     Content		RightBlank"
+        "PageSignature  PageSignature	PageSignature	PageSignature";
+	margin:auto;
+}
+
+.PageTitle{    
+	color:#f0f4f8;
+    font-size:16px;
+    font-weight:bold;
+	height:150px;	
+	text-align:center;
+	background-color:#2e4a62;
+	grid-area:PageTitle;
+}
+
+
+.MenuBar{
+	width:200px; 
+	height:737px;
+	text-align:left;
+	background-color:#f0f4f8;
+	grid-area:MenuBar;
+}
+
+div.MenuBar ul {
+	margin:0;
+	padding-left:0;
+	text-decoration:none;	
+}
+
+div.MenuBar li {
+	/*color:#f0f4f8 ;*/
+	color: #294257;
+	text-decoration:none;
+	/*background-color:#294257 ;*/
+	background-color:#f0f4f8;
+	padding:10px;
+	border:2px solid #f0f4f8;
+	list-style:none;
+	border-radius: 7px;
+}
+
+div.MenuBar li:hover {
+	color: #f0f4f8;
+	background-color:#456f93;
+}
+
+div.MenuBar A:link {
+	text-decoration:none;
+	color:black;
+}
+
+div.MenuBar A:active {
+	text-decoration:none;
+	color:black;
+}
+div.MenuBar A:visited {
+	text-decoration:none;
+	color:black;
+}
+
+#Content{
+	height:737px;
+	overflow:auto;
+	text-align:justify;
+	background-color:#f0f4f8;
+	grid-area:Content;
+}
+
+.Table table {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-collapse: collapse; 
+	text-align: center;
+}
+
+.Table td, th {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.PageSignature{
+	color:#f0f4f8; 
+	height:50px;
+	text-align:center;
+	background-color:#2e4a62;
+	grid-area:PageSignature;
+}
