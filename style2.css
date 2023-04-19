@@ -1,0 +1,146 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	color:#292929;
+    display:grid;
+	background-color:#f0f4f8 ;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: auto 900px auto;
+    grid-template-areas:
+        "PageTitle	PageTitle	PageTitle"
+        "LeftBlank	Content 	RightBlank"
+        "PageSignature  PageSignature	PageSignature";
+	margin:auto;
+}
+
+.PageTitle {
+	grid-area:PageTitle;
+}
+.LeftBlank {
+	grid-area:LeftBlank;
+}
+#Content{
+	grid-area:Content;
+}
+.RightBlank {
+	grid-area:RightBlank;
+}
+.PageSignature {
+	height:100px;
+	background-color:#333;
+	grid-area:PageSignature;
+}
+
+
+
+.PageTitle ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.PageTitle li {
+	float: left;
+	display: block;
+	padding: 25px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+
+
+
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 100px;
+  left: 0;
+  background-color: #333; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  border-radius:5px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  border-radius:5px;
+  margin: 4px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  background-color: #444;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  padding: 0px;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+.PageSignature ul{  
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+}
+
+.PageSignature li {
+	float: left;
+	display: block;
+	padding: 25px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+
+}
+
+img {
+	border-radius: 20px;
+	padding: 10px;
+	width: 100%;
+  }
