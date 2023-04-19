@@ -6,7 +6,7 @@ body {
 	color:#292929;
     display:grid;
 	background-color:#f0f4f8 ;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 150px auto 100px;
     grid-template-columns: auto 900px auto;
     grid-template-areas:
         "PageTitle	PageTitle	PageTitle"
@@ -16,6 +16,7 @@ body {
 }
 
 .PageTitle {
+	height:150px;
 	grid-area:PageTitle;
 }
 .LeftBlank {
@@ -86,7 +87,7 @@ body {
   border: 1px solid #ddd;
   transition: 0.3s;
   border-radius:5px;
-  margin: 4px;
+  margin: 5px;
 }
 
 /* When you mouse over the navigation links, change their color */
