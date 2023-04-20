@@ -154,20 +154,16 @@ body {
 
 }
 
-.row {
+.images {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
+.images img {
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
-}
-
-.column img {
   margin-bottom: 8px;
   vertical-align: middle;
   width: 100%;
@@ -175,8 +171,27 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+.images img {
+	flex: 10%;
+	max-width: 100%;
+	padding: 0 4px;
+	margin-bottom: 8px;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 20px;
+}
+
+body {
+	color:#292929;
+    display:grid;
+	background-color:#f0f4f8;
+    grid-template-rows: 150px auto 100px;
+    grid-template-columns: 0px auto 0px;
+    grid-template-areas:
+        "PageTitle	PageTitle	PageTitle"
+        "LeftBlank	Content 	RightBlank"
+        "PageSignature  PageSignature	PageSignature";
+	margin:auto;
+}
+
 }
