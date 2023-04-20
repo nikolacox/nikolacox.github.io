@@ -2,6 +2,10 @@ html {
 	font-family: sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
 	color:#292929;
     display:grid;
@@ -141,8 +145,29 @@ body {
 
 }
 
-img {
-	border-radius: 20px;
-	padding: 10px;
-	width: 100%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}
