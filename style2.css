@@ -67,7 +67,8 @@ body {
 	float: right;
 }
 
-.PageTitle .standard .contact {
+.PageTitle .standard #contact {
+	display: block;
 	float: right;
 	list-style-type: none;
 	margin-top: 0;
@@ -80,9 +81,8 @@ body {
 	font-size: 10px;
 }
 
-.PageTitle .standard .contact li {
+.PageTitle .standard #contact li {
 	float: none;
-	display: block;
 	font-weight: normal;
 	padding: 10px;
 	color: white;
@@ -259,8 +259,8 @@ body {
   margin-top: 50px;
 }
 
-.PageTitle .standard .contact {
-	visibility: hidden;
+.PageTitle .standard #contact {
+	display:none;
 }
 
 .PageSignature li {
