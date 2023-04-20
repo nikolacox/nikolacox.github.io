@@ -108,6 +108,11 @@ body {
   right: 25px;
   font-size: 56px;
   margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.sidepanel .closebtn:hover {
+  background-color: #333;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -122,6 +127,10 @@ body {
 
 .openbtn:hover {
   background-color: #444;
+}
+
+.openbtn:active {
+  background-color: #333;
 }
 
 
