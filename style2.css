@@ -112,7 +112,7 @@ body {
 }
 
 .sidepanel .closebtn:hover {
-  background-color: #333;
+  background-color: #444;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -125,11 +125,21 @@ body {
   border: none;
 }
 
-.openbtn:hover {
+.openbtn #MeniDugme {
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid white;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.openbtn #MeniDugme:hover {
   background-color: #444;
 }
 
-.openbtn:active {
+.openbtn #MeniDugme:active {
   background-color: #333;
 }
 
